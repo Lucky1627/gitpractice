@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Integration</title>
+<style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none; /* Initially hidden */
+        }
+        .whatsapp-button img {
+            width: 200px;
+            margin-right: 100px;
+        }
+</style>
+</head>
+<body>
+<a href="https://wa.me/1234567890" class="whatsapp-button" id="whatsappButton" target="_blank">
+<img src="catimg.png" alt="WhatsApp"> Chat with us
+</a>
+ 
+    <script>
+        window.addEventListener('scroll', function() {
+            var button = document.getElementById('whatsappButton');
+            if (window.scrollY > 100) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        });
+</script>
+</body>
+</html>

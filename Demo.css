@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data{
+    display:none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text"  oninput="test()">
+    <div></div>
+    
+    <script>
+        
+        function test()
+        {
+            var a =document.getElementsByTagName("div")[0];
+        var b= document.getElementsByTagName("input")[0].value;
+             a.innerText=b;
+        }
+    </script>
+     -->
+
+     <div id="data"></div>
+     <script>
+        let input=document.getElementById("data");
+        setInterval(function()
+        {
+            input.innerHTML=Math.floor(Math.random()*9000+1000)+ "this is your otp"
+        },3000)
+     </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="date"></p>
+    <script>
+        function updatetime()
+        {
+            let date=document.getElementById("date")
+        let newdate= new Date().toLocaleTimeString();
+        date.innerHTML=  newdate;
+        }
+        setInterval(updatetime,1000)
+        updatetime()
+
+       
+    </script>
+</body>
+</html>

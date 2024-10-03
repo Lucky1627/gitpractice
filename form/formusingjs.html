@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            border:2px solid black;
+            width:300px;
+            margin:auto;
+        }
+        .container
+        {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:10px;
+            padding:3px
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+    <form>
+       
+        <div class="container">
+            <label>E-Mail</label>
+        <input id="email" type="email"/>
+        </div>
+        <div class="container">
+        <label>Password</label>
+        <input id="password" type="password" />
+    </div>
+    <div class="container">
+        <button id="btn" type="button" onclick="Update()">Submit</button>
+        </div>
+      
+    </form>
+</div>
+<script>
+   
+    function Update()
+    {
+        let Email=document.getElementById("email").value;
+    let Password=document.getElementById("password").value;
+    let Button=document.getElementById("btn").value;
+    let emailreg=/^[a-z]+[A-Za-z0-9]+@[a-zA-Z]+\.+[a-z]{3}$/
+        if(Email.trim()=="")
+    {
+        alert("email shouldn't be empty")
+    }
+    else if(!emailreg.test(email))
+    {
+        alert("email should follow the pattern")
+    }
+    else alert("your good")
+                   
+    }
+</script>
+</body>
+</html>
